@@ -5,7 +5,7 @@ A miniproject in C for LTTS Training
 [![Linux C/C++ Build CI](https://github.com/syedbasitahmad/ltts_project/actions/workflows/Linux_c-cpp.yml/badge.svg)](https://github.com/syedbasitahmad/ltts_project/actions/workflows/Linux_c-cpp.yml)
 
 # One Stop Solution
-![ONE STOP SOLUTION Logo](/image/ONE_STOP.jpg)
+![ONE STOP SOLUTION Logo](.\image\ONE_STOP.jpg)
 ## Problem Statement
 * **One Stop Solution (Sprint 8 April-23 April)**
  Updated 9 minutes ago
