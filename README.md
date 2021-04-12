@@ -4,9 +4,9 @@ A miniproject in C for LTTS Training
 #Build:
 [![Linux C/C++ Build CI](https://github.com/syedbasitahmad/ltts_project/actions/workflows/Linux_c-cpp.yml/badge.svg)](https://github.com/syedbasitahmad/ltts_project/actions/workflows/Linux_c-cpp.yml)
 
-* **_~~Everytime googling for mathematical operations and unit conversions~~_** 👎 👎 
-* **_NOW YOU DON'T HAVE TO BECAUSE I HAVE COME UP WITH A SOLUTION_ **: 👇 ⏬ ⬇️ 🔽 👇 
-# One Stop Solution
+* ## **_~~Everytime googling for mathematical operations and unit conversions~~_** 👎 👎 
+* ## **_NOW YOU DON'T HAVE TO BECAUSE I HAVE COME UP WITH A SOLUTION_**: 👇 ⏬ ⬇️ 🔽 👇 
+# _ONE STOP SOLUTION_
 ![image](https://user-images.githubusercontent.com/65653522/114425480-bd874e80-9bd6-11eb-9447-66dd98a6be00.png)
 
 
