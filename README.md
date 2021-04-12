@@ -7,9 +7,12 @@ A miniproject in C for LTTS Training
 # One Stop Solution
 ![image](https://user-images.githubusercontent.com/65653522/114425480-bd874e80-9bd6-11eb-9447-66dd98a6be00.png)
 
-## Problem Statement
+
 * **One Stop Solution (Sprint 8 April-23 April)**
  Updated 9 minutes ago
+**_~~Everytime googling for mathematical operations and unit conversions~~_** 👎 👎 
+ **_NOW YOU DON'T HAVE TO BECAUSE I HAVE COME UP WITH A SOLUTION_ **: 👇 ⏬ ⬇️ 🔽 👇 
+
 One Stop Solution For Major mathematical operations :
 * **Basic Calculator** 
 * **Bitwise Calculator** 
