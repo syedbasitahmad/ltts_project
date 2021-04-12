@@ -8,7 +8,14 @@ A miniproject in C for LTTS Training
 ## Problem Statement
 * **One Stop Solution (Sprint 8 April-23 April)**
  Updated 9 minutes ago
-One Stop Solution For Major mathematical operations :* **Basic Calculator** * **Bitwise Calculator** * **BMI CALCULATOR** * **Complex Calculator** * **DIGITAL STORAGE CONVERTER** * **TEMPERATURE CONVERTER** * **UNIT CONVERTER**
+One Stop Solution For Major mathematical operations :
+* **Basic Calculator** 
+* **Bitwise Calculator** 
+* **BMI CALCULATOR** 
+* **Complex Calculator** 
+* **DIGITAL STORAGE CONVERTER** 
+* **TEMPERATURE CONVERTER** 
+* **UNIT CONVERTER**
 
 
 
