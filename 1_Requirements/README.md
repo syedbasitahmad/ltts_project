@@ -46,12 +46,9 @@ Function for area calculation and other major unit converters
 ## Defining Our System
 ![image](https://user-images.githubusercontent.com/65653522/114606249-ad47a000-9cb8-11eb-9a29-81adefbedea9.png)
 
-### Certain assumptions:
-* Few systems already exists with which our system will interact
-    * Hospital Management Application
-    * Analytics System
-    * Emergency Services
-![image](https://user-images.githubusercontent.com/65653522/114606249-ad47a000-9cb8-11eb-9a29-81adefbedea9.png)
+## Concept Map
+![image](https://user-images.githubusercontent.com/65653522/114608533-6ad39280-9cbb-11eb-95ed-2d801040e2df.png)
+
 
 ### Explanation:
 One Stop Solution For Major mathematical operations have these operations:
