@@ -1,5 +1,5 @@
 # Document the code using Doxygen
-PROJECT_DOXY_FILE = Complex_Calc_Doxyfile
+PROJECT_DOXY_FILE = Doxyfile
 
 doc: $(PROJECT_DOXY_FILE)
 	doxygen ./$^

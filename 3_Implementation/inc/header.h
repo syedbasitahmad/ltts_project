@@ -105,7 +105,7 @@ error_t basic_calc();
 error_t complex_calc();
 
 /**
-* @brief computes sum of teh two complex numbers
+* @brief computes sum of two complex numbers
  * 
  * @param[in] cnum1 Pointer to complex number1
  * @param[in] cnum2 Pointer to complex number2 
