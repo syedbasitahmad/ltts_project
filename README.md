@@ -2,7 +2,7 @@
 A miniproject in C for LTTS Training
 
 #Build:
-[![Linux C/C++ Build CI](https://github.com/syedbasitahmad/ltts_project/actions/workflows/Linux_c-cpp.yml/badge.svg)](https://github.com/syedbasitahmad/ltts_project/actions/workflows/Linux_c-cpp.yml)
+[![CI](https://github.com/syedbasitahmad/ltts_project/actions/workflows/main.yml/badge.svg?branch=main)](https://github.com/syedbasitahmad/ltts_project/actions/workflows/main.yml)
 
 * ## **_~~Everytime googling for mathematical operations and unit conversions~~_** 👎 👎 
 * ## **_NOW YOU DON'T HAVE TO BECAUSE I HAVE COME UP WITH A SOLUTION_**: 👇 ⏬ ⬇️ 🔽 👇 
