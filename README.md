@@ -14,13 +14,13 @@ A miniproject in C for LTTS Training
  Updated 9 minutes ago
 
 One Stop Solution For Major mathematical operations :
-* **Basic Calculator** 
-* **Bitwise Calculator** 
-* **BMI CALCULATOR** 
-* **Complex Calculator** 
-* **DIGITAL STORAGE CONVERTER** 
-* **TEMPERATURE CONVERTER** 
-* **UNIT CONVERTER**
+* - [x] **_Basic Calculator_** 
+* - [x] **_Bitwise Calculator_** 
+* - [x] **_BMI CALCULATOR_** 
+* - [x] **_Complex Calculator_** 
+* - [x] **_DIGITAL STORAGE CONVERTER_** 
+* - [x] **_TEMPERATURE CONVERTER_** 
+* - [x] **_UNIT CONVERTER_**
 
 
 
