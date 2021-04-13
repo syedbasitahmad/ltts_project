@@ -1,5 +1,6 @@
 # Requirements
 ## Introduction
+![image](https://user-images.githubusercontent.com/65653522/114425480-bd874e80-9bd6-11eb-9447-66dd98a6be00.png)
  * Everyday we come across a situation where we have to do some mathematical operations of any sort whether its a normal basic calculation,unit conversion,temperature conversion,bitwise operation,digital storage unit conversion or sometimes we may look for our body mass index.Then in these cases we have to google or find some other device for our solution.So in order to make a better solution for this I have put all these basic operations at one place so that user doesn't have to move here and there whenever they need to perform these operations. 
  * In this project i have implemented all the concepts of C programming also included unit test files, Makefile.
 
