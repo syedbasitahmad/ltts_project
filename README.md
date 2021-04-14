@@ -5,7 +5,7 @@ A miniproject in C for LTTS Training(SDLC Activity Based Learning)
 Badge Name | Status |
 -----------|---------|
 CI | [![CI](https://github.com/syedbasitahmad/ltts_project/actions/workflows/main.yml/badge.svg?branch=main)](https://github.com/syedbasitahmad/ltts_project/actions/workflows/main.yml) |
-Build | [![Linux C/C++ Build CI](https://github.com/Gobikumaar-Sivagnanam/Miniproject_C/actions/workflows/Linux_c-cpp.yml/badge.svg)](https://github.com/Gobikumaar-Sivagnanam/Miniproject_C/actions/workflows/Linux_c-cpp.yml) |
+Build | [![Linux C/C++ Build CI](https://github.com/syedbasitahmad/ltts_project/actions/workflows/linux_c-cpp.yml/badge.svg)](https://github.com/syedbasitahmad/ltts_project/actions/workflows/linux_c-cpp.yml) |
 
 
 * ## **_~~Everytime googling for mathematical operations and unit conversions~~_** 👎 👎 
