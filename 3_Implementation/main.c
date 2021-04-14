@@ -69,7 +69,7 @@ int main(){
         printf("\n");
         printf("%s : ", KEY);
  
-        one_stop_oprn=getche();
+        scanf("%c",&one_stop_oprn);
  
         switch(one_stop_oprn)
         {
