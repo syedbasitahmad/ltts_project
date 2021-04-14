@@ -156,6 +156,12 @@ void test_div(void){
     TEST_ASSERT_EQUAL(0, result.real);
     TEST_ASSERT_EQUAL(1, result.imaginary);
 }
+void test_basic_calc(void){    
+    TEST_ASSERT_EQUAL(SUCCESS, calculator_operations());
+}
+void test_basic_calc_div(void){    
+    TEST_ASSERT_EQUAL(SUCCESS, division());
+}
 
 int main(void)
 {
@@ -169,6 +175,8 @@ int main(void)
     RUN_TEST(test_sub);
     RUN_TEST(test_mul);
     RUN_TEST(test_div);
+    RUN_TEST(test_basic_calc);
+    RUN_TEST(test_basic_calc_div);
 
     /* Close the Unity Test Framework */
     return UNITY_END();

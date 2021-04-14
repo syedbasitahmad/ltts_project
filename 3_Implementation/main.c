@@ -20,7 +20,19 @@ error_t one_stop_operations()
     //system("cls");  use system function to clear 
     //screen instead of clrscr();
     yellow_t();
-    printf("\n             Welcome to My ONE STOP SOLUTION FOR MAJOR MATHEMATICAL OPERATIONS  \n\n");
+    printf("\t\t\t|------------------------------------------------|\n");
+	printf("\t\t|                                                |\n");
+	printf("\t\t|       -----------------------------            |\n");
+	printf("\t\t|       WELCOME TO ONE STOP SOLUTION             |\n");
+	printf("\t\t|       -----------------------------            |\n");
+	printf("\t\t|                                                |\n");
+	printf("\t\t|                                                |\n");
+	printf("\t\t|                                                |\n");
+	printf("\t\t|              Miniproject                       |\n");
+	printf("\t\t|              SF ID:260756                      |\n");
+	printf("\t\t|      CONTACT US:basithmad4@gmail.com           |\n");
+	printf("\t\t|------------------------------------------------|\n\n\n");
+
  
     printf("******* Press 'Q' or 'q' to quit ");
     printf("the program ********\n");

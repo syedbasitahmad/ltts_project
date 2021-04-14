@@ -11,7 +11,7 @@ src/digital_storage.c \
 src/bitwise_calculator.c \
 src/basic_calculator.c
 
-TEST_SRC = test/test_complex_calculator.c\
+TEST_SRC = test/test.c\
 unity/unity.c
 
 INC = -Iinc\

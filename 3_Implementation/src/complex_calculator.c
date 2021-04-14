@@ -1,6 +1,5 @@
 #include "stdlib.h"
 #include<stdio.h>
-#include<conio.h>
 #include<stdlib.h>
 #include<math.h>
 #include "header.h"
@@ -106,7 +105,7 @@ error_t complex_calc()
         printf("\n");
         printf("%s : ", KEY);
  
-        comp_calc_oprn=getche();
+        scanf("%c",&comp_calc_oprn);
  
         switch(comp_calc_oprn)
         {

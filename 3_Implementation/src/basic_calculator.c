@@ -9,7 +9,6 @@
  * 
  */
 #include<stdio.h>
-#include<conio.h>
 #include<math.h>
 #include<stdlib.h>
 #include "stdlib.h"
@@ -109,8 +108,10 @@ error_t division()
     scanf("%d", &a); 
     printf("Please enter second number : "); 
     scanf("%d", &b);
+    if(b==0) {return ERROR_DIV_BY_ZERO;}
     d=a/b;
     printf("\nDivision of entered numbers=%d\n",d);
+    return SUCCESS;
 }
  
 error_t modulus()
@@ -120,6 +121,7 @@ error_t modulus()
     scanf("%d", &a); 
     printf("Please enter second number  : "); 
     scanf("%d", &b);
+    if(b==0) {return ERROR_DIV_BY_ZERO;}
     d=a%b;
     printf("\nModulus of entered numbers = %d\n",d);
     return SUCCESS;
@@ -168,7 +170,7 @@ int factorial()
 error_t basic_calc()
 {
     int X=1;
-    char Calc_oprn;
+    char calc_oprn;
  
     // Function call 
     calculator_operations();
@@ -177,10 +179,9 @@ error_t basic_calc()
     {
         printf("\n");
         printf("%s : ", KEY);
+        scanf("%c",&calc_oprn);
  
-        Calc_oprn=getche();
- 
-        switch(Calc_oprn)
+        switch(calc_oprn)
         {
             case '+': addition();
                       break;
