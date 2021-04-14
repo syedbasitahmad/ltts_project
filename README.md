@@ -1,8 +1,11 @@
 # Miniproject_C
-A miniproject in C for LTTS Training
+A miniproject in C for LTTS Training(SDLC Activity Based Learning)
+* **Took help from various websites like GFG etc. and other resources for the implementation part.
 
-#Build:
-[![CI](https://github.com/syedbasitahmad/ltts_project/actions/workflows/main.yml/badge.svg?branch=main)](https://github.com/syedbasitahmad/ltts_project/actions/workflows/main.yml)
+Badge Name | Status |
+-----------|---------|
+Build | [![CI](https://github.com/syedbasitahmad/ltts_project/actions/workflows/main.yml/badge.svg?branch=main)](https://github.com/syedbasitahmad/ltts_project/actions/workflows/main.yml) |
+
 
 * ## **_~~Everytime googling for mathematical operations and unit conversions~~_** 👎 👎 
 * ## **_NOW YOU DON'T HAVE TO BECAUSE I HAVE COME UP WITH A SOLUTION_**: 👇 ⏬ ⬇️ 🔽 👇 
@@ -23,10 +26,26 @@ One Stop Solution For Major mathematical operations :
 * - [x] **_UNIT CONVERTER_**
 
 
+## Folder Structure
+Folder               | Description
+---------------------|---------------------------------------------------
+`1_Requirements`     | Files detailing requirements and research done
+`2_Architecture`     | Documents detailing the architecture used
+`3_Implementation`   | All code and relevant documentation
+`4_TestPlanAndOutput`| Documents with test plan and output
+`5_Report`           | Report on the implemented C Miniproject
+`6_ImagesAndVideos`  | Files containing working video and images
+`7_Other`            | Other supporting documents
 
-* Implementation for different operations for each operation instead of writing everything under main function.
-* Created a **header file**,  **source code file** and **test file**.
-* Use **Dynamic memory** wherever possible.
+## Contributors List and Summary
+| SF_ID | Name | Features | Issues Raised | Issues Solved | No. of Test Cases | No. of Test Cases Passing |
+|-----|-----|-----|-----|-----|-----|-----|
+| 260756 | Syed Basit Ahmad | All | 2 | 0 | 9 | 9 
+
+## Challenges Faced and How it was overcome
+| Challenge Faced | Method to overcome |
+|-----------------|--------------------|
+| Writing test case where the function doesn't take arguments | Made those function to return SUCCESS or FAILURE |
 
 ### Tool usage
 * **Unit test** cases for each function.

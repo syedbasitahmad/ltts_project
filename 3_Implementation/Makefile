@@ -1,7 +1,7 @@
 PROJ_NAME = Complex_Calculator
 TEST_PROJ_NAME = Test_$(PROJ_NAME)
 
-BUILD_DIR = Build
+
 
 SRC = src/complex_calculator.c \
 src/BMI_calculator.c \
@@ -33,20 +33,31 @@ endif
 # Makefile will not run target command if the name with file already exists. To override, use .PHONY
 .PHONY : all test coverage run clean doc
 
-all:$(BUILD_DIR)
-	gcc main.c $(SRC) $(INC) -o $(call FixPath,$(BUILD_DIR)/$(PROJ_NAME).$(EXEC))
+all:$(SRC)
+	gcc main.c $(SRC) $(INC) -lm -o $(call FixPath,$(PROJ_NAME).$(EXEC))
 
-run: all
-	$(call FixPath,$(BUILD_DIR)/$(PROJ_NAME).$(EXEC))
+run: $(PROJ_NAME).$(EXEC)
+	./$(call FixPath,$(PROJ_NAME).$(EXEC))
+
 
 test: $(SRC) $(TEST_SRC)
-	gcc $^ $(INC) -o $(call FixPath,$(BUILD_DIR)/$(TEST_PROJ_NAME).$(EXEC))
-	$(call FixPath,$(BUILD_DIR)/$(TEST_PROJ_NAME).$(EXEC))
+	gcc $(TEST_SRC) $(SRC) $(INC) $(INC_T) -lm -o $(TEST_PROJ_NAME).$(EXEC)
+	./$(TEST_PROJ_NAME).$(EXEC)
 
-coverage:${PROJECT_NAME}
-	gcc -fprofile-arcs -ftest-coverage $(SRC) $(INC) -o $(call FixPath,$(BUILD_DIR)/$(TEST_PROJ_NAME).$(EXEC))
-	$(call FixPath,$(BUILD_DIR)/$(TEST_PROJ_NAME).$(EXEC))
-	gcov -a $(SRC)
+coverage: $(PROJ_NAME).$(EXEC)
+	gcc -fprofile-arcs -ftest-coverage main.c $(SRC) $(INC) -lm -o $(PROJ_NAME).$(EXEC)
+	./$(PROJ_NAME).$(EXEC)
+	gcov -a main.c
+
+cppcheck:
+	cppcheck --enable=all $(SRC) main.c
+debug:
+	gcc -I $(INC) $(SRC) main.c -g -o $(PROJ_NAME).$(EXEC)
+	gdb $(PROJ_NAME).$(EXEC)
+
+memcheck:
+	valgrind ./$(PROJ_NAME).$(EXEC)
+
 
 doc:
 	make -C doc
@@ -54,5 +65,4 @@ $(BUILD_DIR):
 	mkdir $(BUILD_DIR)
 
 clean:
-	$(RM) $(call FixPath,$(BUILD_DIR)/*)
-	$(RM) *.gcda *.gcov *gcno
+	$(RM) *.$(EXEC) *.gcov *.gcda *.gcno
