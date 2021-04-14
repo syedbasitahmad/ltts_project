@@ -8,7 +8,6 @@
  * @copyright Copyright (c) 2021
  * 
  */
-#include<conio.h>
 #include<math.h>
 #ifndef _COMPLEX_T_H
 #define _COMPLEX_T_H

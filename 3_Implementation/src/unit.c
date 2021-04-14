@@ -32,7 +32,6 @@ error_t area_converter()
 		area = width*length;
 		printf(" The area is %ld", area);
 		fflush(stdin);
-		getchar();
 		return SUCCESS;
 	}
 

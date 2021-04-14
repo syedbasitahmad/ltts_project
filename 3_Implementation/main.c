@@ -9,7 +9,7 @@
  * 
  */
 #include "stdio.h"
-#include "inc\header.h"
+#include "header.h"
 #define KEY "Enter the calculator Operation you want to do:"
 
 void yellow_t(){
