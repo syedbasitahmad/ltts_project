@@ -6,6 +6,7 @@ Badge Name | Status |
 -----------|---------|
 CI | [![CI](https://github.com/syedbasitahmad/ltts_project/actions/workflows/main.yml/badge.svg?branch=main)](https://github.com/syedbasitahmad/ltts_project/actions/workflows/main.yml) |
 Build | [![Linux C/C++ Build CI](https://github.com/syedbasitahmad/ltts_project/actions/workflows/linux_c-cpp.yml/badge.svg)](https://github.com/syedbasitahmad/ltts_project/actions/workflows/linux_c-cpp.yml) |
+Git Inspector | [![Contribution Check - Git Inspector](https://github.com/syedbasitahmad/ltts_project/actions/workflows/gitinspector.yml/badge.svg)](https://github.com/syedbasitahmad/ltts_project/actions/workflows/gitinspector.yml) |
 
 
 * ## **_~~Everytime googling for mathematical operations and unit conversions~~_** 👎 👎 
