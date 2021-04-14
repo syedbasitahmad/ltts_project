@@ -1,6 +1,6 @@
 # Miniproject_C
 A miniproject in C for LTTS Training(SDLC Activity Based Learning)
-* **Took help from various websites like GFG etc. and other resources for the implementation part.
+* Took help from various websites like GFG etc. and other resources for the implementation part.
 
 Badge Name | Status |
 -----------|---------|
@@ -8,6 +8,7 @@ CI | [![CI](https://github.com/syedbasitahmad/ltts_project/actions/workflows/mai
 Build | [![Linux C/C++ Build CI](https://github.com/syedbasitahmad/ltts_project/actions/workflows/linux_c-cpp.yml/badge.svg)](https://github.com/syedbasitahmad/ltts_project/actions/workflows/linux_c-cpp.yml) |
 Git Inspector | [![Contribution Check - Git Inspector](https://github.com/syedbasitahmad/ltts_project/actions/workflows/gitinspector.yml/badge.svg)](https://github.com/syedbasitahmad/ltts_project/actions/workflows/gitinspector.yml) |
 Unity Test | [![Unit Testing - Unity](https://github.com/syedbasitahmad/ltts_project/actions/workflows/unity_test.yml/badge.svg)](https://github.com/syedbasitahmad/ltts_project/actions/workflows/unity_test.yml) |
+Static Analysis Cppcheck | [![Code Quality - Static Code - Cppcheck](https://github.com/syedbasitahmad/ltts_project/actions/workflows/cpp_check.yml/badge.svg)](https://github.com/syedbasitahmad/ltts_project/actions/workflows/cpp_check.yml) |
 
 
 * ## **_~~Everytime googling for mathematical operations and unit conversions~~_** 👎 👎 
