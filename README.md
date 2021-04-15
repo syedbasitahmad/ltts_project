@@ -9,6 +9,7 @@ Build | [![Linux C/C++ Build CI](https://github.com/syedbasitahmad/ltts_project/
 Git Inspector | [![Contribution Check - Git Inspector](https://github.com/syedbasitahmad/ltts_project/actions/workflows/gitinspector.yml/badge.svg)](https://github.com/syedbasitahmad/ltts_project/actions/workflows/gitinspector.yml) |
 Unity Test | [![Unit Testing - Unity](https://github.com/syedbasitahmad/ltts_project/actions/workflows/unity_test.yml/badge.svg)](https://github.com/syedbasitahmad/ltts_project/actions/workflows/unity_test.yml) |
 Static Analysis Cppcheck | [![Code Quality - Static Code - Cppcheck](https://github.com/syedbasitahmad/ltts_project/actions/workflows/cpp_check.yml/badge.svg)](https://github.com/syedbasitahmad/ltts_project/actions/workflows/cpp_check.yml) |
+Codacy | [![Codacy Badge](https://app.codacy.com/project/badge/Grade/09e541dec67f4ffcbf6e47a8ac4e4cc9)](https://www.codacy.com/gh/syedbasitahmad/ltts_project/dashboard?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=syedbasitahmad/ltts_project&amp;utm_campaign=Badge_Grade)
 
 
 * ## **_~~Everytime googling for mathematical operations and unit conversions~~_** 👎 👎 
