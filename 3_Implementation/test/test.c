@@ -159,8 +159,29 @@ void test_div(void){
 void test_basic_calc(void){    
     TEST_ASSERT_EQUAL(SUCCESS, calculator_operations());
 }
-void test_basic_calc_div(void){    
-    TEST_ASSERT_EQUAL(SUCCESS, division());
+//void test_basic_calc_div(void){    
+  //  TEST_ASSERT_EQUAL(SUCCESS, division());
+//}
+void test_1_add(void){    
+    TEST_ASSERT_EQUAL(3, add(1,2));
+}
+void test_bitwise(void){    
+    TEST_ASSERT_EQUAL(SUCCESS, bitwise_operations());
+}
+
+void test_complex_calc(void){    
+    TEST_ASSERT_EQUAL(SUCCESS, complex_calculator_operations());
+}
+void test_temp(void){    
+    TEST_ASSERT_EQUAL(SUCCESS, temperature());
+}
+
+void test_1_sub(void){    
+    TEST_ASSERT_EQUAL(3, sub(5,2));
+}
+
+void test_1_temp_con(void){    
+    TEST_ASSERT_EQUAL(53.599998, temp_con(12));
 }
 
 int main(void)
@@ -176,7 +197,12 @@ int main(void)
     RUN_TEST(test_mul);
     RUN_TEST(test_div);
     RUN_TEST(test_basic_calc);
-    RUN_TEST(test_basic_calc_div);
+    RUN_TEST(test_1_add);
+    RUN_TEST(test_1_sub);
+    RUN_TEST(test_bitwise);
+    RUN_TEST(test_complex_calc);
+    RUN_TEST(test_temp);
+    RUN_TEST(test_1_temp_con);
 
     /* Close the Unity Test Framework */
     return UNITY_END();

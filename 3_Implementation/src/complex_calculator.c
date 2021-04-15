@@ -5,7 +5,7 @@
 #include "header.h"
 #define KEY "Enter the calculator Operation you want to do:"
 
-void complex_calculator_operations()
+error_t complex_calculator_operations()
 {
     //system("cls");  use system function to clear 
     //screen instead of clrscr();
@@ -24,6 +24,7 @@ void complex_calculator_operations()
     printf("Enter / symbol for Division \n");
     printf("Enter h for MAIN MENU \n");
     printf("Enter q to EXIT \n");
+    return SUCCESS;
 
 }
 

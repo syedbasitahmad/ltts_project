@@ -13,6 +13,7 @@
 #include<stdlib.h>
 #include "stdlib.h"
 #include "header.h"
+#define ll long long int
 
 void cyan () {
   printf("\033[0;36m");
@@ -35,7 +36,9 @@ error_t factorial();
 error_t calculator_operations();
 
 //Function Definitions
- 
+ll sub(ll a,ll b){
+    return a-b;
+}
 error_t calculator_operations()
 {
     //system("cls");  use system function to clear 
@@ -61,6 +64,10 @@ error_t calculator_operations()
     return SUCCESS;
 }
  
+float add(float num1, float num2)
+{
+   return num1 + num2;
+}
 error_t addition()
 {
     int n, total=0, k=0, number;

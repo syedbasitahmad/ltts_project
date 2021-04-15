@@ -12,6 +12,12 @@
 #include<stdio.h>
 #include "header.h"
 
+float temp_con(float cel)
+{
+ float fahr = (1.8 * cel) + 32.0; //temperature conversion formula
+ return fahr;
+}
+
 error_t temperature()
 {
 

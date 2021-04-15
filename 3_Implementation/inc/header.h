@@ -143,5 +143,16 @@ error_t complexMul(complex_t const* _Z1, complex_t const* _Z2, complex_t* _Z3);
  */
 error_t complexDiv(complex_t const* _Z1, complex_t const* _Z2, complex_t* _Z3);
 
+float add(float num1, float num2);
+
+error_t calculator_operations();
+
+error_t bitwise_operations();
+
+error_t complex_calculator_operations();
+
+long long int sub(long long int, long long int);
+
+float temp_con(float cel);
 
 #endif /* _COMPLEX_T_H */
