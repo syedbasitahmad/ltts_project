@@ -18,6 +18,6 @@
 | L_03 | To test the method implementation BMI calculator | Two float | float | float | Scenario/Technical |
 | L_04 | To test the method implementation of all conversions |  Two float| float | float | Scenario/Technical |
 
-## Screenshot
+## Screenshot of all test case passing
 
 ![image](https://user-images.githubusercontent.com/65653522/114987991-712c5f00-9eb3-11eb-8783-cdec30376a04.png)
