@@ -1,6 +1,6 @@
 # Miniproject_C
 A miniproject in C for LTTS Training(SDLC Activity Based Learning)
-* Took help from various websites like GFG etc. and other resources for the implementation part.
+* Took help from various websites like Geeks for geeks ,tutorial points etc. and modified implementation according to the requirement for the implementation part
 
 Badge Name | Status |
 -----------|---------|
