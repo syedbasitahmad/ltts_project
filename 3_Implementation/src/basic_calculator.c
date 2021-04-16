@@ -1,236 +1,148 @@
 /**
  * @file basic_calculator.c
- * @author your name (you@domain.com)
- * @brief Functions for all types of calculations i.e,add,substract,multiply,divide,power,factorial,modulus.
+ * @author 260756 (basitahmad4@gmail.com.com)
+ * @brief 
  * @version 0.1
- * @date 2021-04-10
+ * @date 2021-04-12
  * 
  * @copyright Copyright (c) 2021
  * 
  */
-#include<stdio.h>
-#include<math.h>
-#include<stdlib.h>
-#include "stdlib.h"
 #include "header.h"
-#define ll long long int
-
-void cyan () {
-  printf("\033[0;36m");
+float add(calc1 *c1) {
+    float res;
+    res= c1->a + c1->b;
+    return res;
 }
-
-void blue(){
-  printf("\033[0;34m");
+float sub(calc1 *c1) {
+    float res;
+    res= c1->a - c1->b;
+    return res;
 }
- 
-#define KEY "Enter the calculator Operation you want to do:"
- 
-// Function prototype declaration
-error_t addition();
-error_t subtraction();
-error_t multiplication();
-error_t division();
-error_t modulus();
-error_t power();
-error_t factorial();
-error_t calculator_operations();
-
-//Function Definitions
-ll sub(ll a,ll b){
-    return a-b;
+float mul(calc1 *c1) {
+    float res;
+    res= c1->a * c1->b;
+    return res;
 }
-error_t calculator_operations()
+float divi(calc1 *c1) {
+    float res;
+    if (c1->b==0){
+	return -1;
+}
+else{
+    res= c1->a / c1->b;
+    return res;
+}
+}
+float square_r(calc5 *c5){
+	if(c5->i<0){
+	return -1;
+	}
+	else{
+        float res;
+        res= sqrt(c5->i);
+        return res;
+}
+}
+float power(calc1 *c1){
+    float res;
+    res= pow(c1->a , c1->b);
+    return res;
+}
+float power_2(calc3 *c3){
+    float res;
+    res= pow(c3->e , c3->f);
+    return res;
+}
+float power_3(calc3 *c3){
+    float res;
+    res= pow(c3->e , c3->f);
+    return res;
+}
+float power_neg(calc3 *c3){
+    float res;
+    res= pow(c3->e , c3->f);
+    return res;
+}
+float power_to_10(calc4 *c4){
+    float res;
+    res= pow(c4->g , c4->h);
+    return res;
+}
+float log_10(calc5 *c5){
+    float res;
+	if(c5->i<=0){
+        return -1;
+}
+	else{
+        res= log10(c5->i);
+        return res;
+}
+}
+int modu(calc2 *c2){
+    int res;
+    res= c2->c % c2->d;
+    return res;
+}
+float sin_v(calc5 *c5){
+    float res;
+    res= sin(c5->i * 3.14159 / 180);
+    return res;
+}
+float cos_v(calc5 *c5){
+    float res;
+    res=  cos(c5->i * 3.14159 / 180);
+    return res;
+}
+float tan_v(calc5 *c5){
+    float res;
+    res=tan(c5->i * 3.14159 / 180);
+    return res;
+}
+float sin_inv(calc5 *c5){
+    float res;
+    res= 1 / (sin(c5->i * 3.14159 / 180));
+    return res;
+}
+float cos_inv(calc5 *c5){
+    float res;
+    res= 1 / (cos(c5->i * 3.14159 / 180));
+    return res;
+}
+float tan_inv(calc5 *c5){
+    float res;
+    res= 1 / (tan(c5->i * 3.14159 / 180));
+    return res;
+}
+float percent(calc1 *c1)
 {
-    //system("cls");  use system function to clear 
-    //screen instead of clrscr();
-    cyan();
-    printf("\n             Welcome to C calculator \n\n");
- 
-    printf("******* Press 'Q' or 'q' to quit ");
-    printf("the program ********\n");
-    printf("***** Press 'H' or 'h' to display ");
-    printf("below options *****\n\n");
-    printf("Enter 'C' or 'c' to clear the screen and");
-    printf(" display available option \n\n");
- 
-    printf("Enter + symbol for Addition \n");
-    printf("Enter - symbol for Subtraction \n");
-    printf("Enter * symbol for Multiplication \n");
-    printf("Enter / symbol for Division \n");
-    printf("Enter ? symbol for Modulus\n");
-    printf("Enter ^ symbol for Power \n");
-    printf("Enter ! symbol for Factorial \n\n");
-    printf("Enter q to exit \n\n");
-    return SUCCESS;
+    float res;
+    res= (c1->a*c1->b)/100;
+    return res;
 }
- 
-float add(float num1, float num2)
-{
-   return num1 + num2;
+float fact(calc5 *c5){
+	float res = 1;
+	if(c5->i==0){
+	return 1;
+	}
+	else if(c5->i<0){
+	return -1;
+	}
+	else{
+    int i;
+    for(i = 1; i <= c5->i; i++) {
+    res = res * i;
 }
-error_t addition()
-{
-    int n, total=0, k=0, number;
-    printf("\nEnter the number of elements you want to add:");
-    scanf("%d",&n);
-    printf("Please enter %d numbers one by one: \n",n);
-    while(k<n)
-    { 
-        scanf("%d",&number);
-        total=total+number;
-        k=k+1;
-    }
-    printf("Sum of %d numbers = %d \n",n,total);
-    return SUCCESS;
 }
- 
-error_t subtraction()
-{ 
-    int a, b, c = 0; 
-    printf("\nPlease enter first number  : "); 
-    scanf("%d", &a); 
-    printf("Please enter second number : "); 
-    scanf("%d", &b); 
-    c = a - b; 
-    printf("\n%d - %d = %d\n", a, b, c); 
-    return SUCCESS;
+        return res;
 }
- 
-error_t multiplication()
-{
-    int a, b, mul=0; 
-    printf("\nPlease enter first numb   : "); 
-    scanf("%d", &a); 
-    printf("Please enter second number: "); 
-    scanf("%d", &b);
-    mul=a*b;
-    printf("\nMultiplication of entered numbers = %d\n",mul);
-    return SUCCESS;
+float power_y(calc1 *c1){
+    float res;
+    res= pow(c1->a, (1/c1->b));
+    return res;
 }
- 
-error_t division()
-{
-    int a, b, d=0; 
-    printf("\nPlease enter first number  : "); 
-    scanf("%d", &a); 
-    printf("Please enter second number : "); 
-    scanf("%d", &b);
-    if(b==0) {return ERROR_DIV_BY_ZERO;}
-    d=a/b;
-    printf("\nDivision of entered numbers=%d\n",d);
-    return SUCCESS;
+float power_one_divideby_3(calc1 *c1){
+    float res;
+    res=pow(c1->a, (1/c1->b));
+    return res;    
 }
- 
-error_t modulus()
-{
-    int a, b, d=0; 
-    printf("\nPlease enter first number   : "); 
-    scanf("%d", &a); 
-    printf("Please enter second number  : "); 
-    scanf("%d", &b);
-    if(b==0) {return ERROR_DIV_BY_ZERO;}
-    d=a%b;
-    printf("\nModulus of entered numbers = %d\n",d);
-    return SUCCESS;
-}
- 
-error_t power()
-{
-    double a,num, p;
-    printf("\nEnter two numbers to find the power \n");
-    printf("number: ");
-    scanf("%lf",&a);
- 
-    printf("power : ");
-    scanf("%lf",&num);
- 
-    p=pow(a,num);
- 
-    printf("\n%lf to the power %lf = %lf \n",a,num,p);
-    return SUCCESS;
-}
- 
-int factorial()
-{
-    int i,fact=1,num;
- 
-    printf("\nEnter a number to find factorial : ");
-    scanf("%d",&num);
- 
-    if (num<0)
-    {
-        printf("\nPlease enter a positive number to");
-        printf(" find factorial and try again. \n");
-        printf("\nFactorial can't be found for negative");
-        printf(" values. It can be only positive or 0  \n");
-        return 1;
-    }               
- 
-    for(i=1;i<=num;i++)
-    fact=fact*i;
-    printf("\n");
-    printf("Factorial of entered number %d is:%d\n",num,fact);
-    return 0;
-}
- 
-// Start of Main Program
-error_t basic_calc()
-{
-    int X=1;
-    char calc_oprn;
- 
-    // Function call 
-    calculator_operations();
- 
-    while(X)
-    {
-        printf("\n");
-        printf("%s : ", KEY);
-        scanf("%c",&calc_oprn);
- 
-        switch(calc_oprn)
-        {
-            case '+': addition();
-                      break;
- 
-            case '-': subtraction();
-                      break;
- 
-            case '*': multiplication();
-                      break;
- 
-            case '/': division();
-                      break;
- 
-            case '?': modulus();
-                      break;
- 
-            case '!': factorial();
-                      break;
- 
-            case '^': power();
-                      break;
- 
-            case 'H':
-            case 'h': calculator_operations();
-                      break;
- 
-            case 'Q':
-            case 'q': exit(0);
-                      break;
-            case 'c':
-            case 'C': system("cls");
-                      calculator_operations();
-                      break;
- 
-            default : system("cls");
- 
-    printf("\n**********You have entered unavailable option");
-    printf("***********\n");
-    printf("\n*****Please Enter any one of below available ");
-    printf("options****\n");
-                      calculator_operations();
-        }
-    }
-}
- 

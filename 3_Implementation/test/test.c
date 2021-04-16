@@ -156,16 +156,33 @@ void test_div(void){
     TEST_ASSERT_EQUAL(0, result.real);
     TEST_ASSERT_EQUAL(1, result.imaginary);
 }
-void test_basic_calc(void){    
-    TEST_ASSERT_EQUAL(SUCCESS, calculator_operations());
-}
-//void test_basic_calc_div(void){    
-  //  TEST_ASSERT_EQUAL(SUCCESS, division());
-//}
-void test_1_add(void){    
-    TEST_ASSERT_EQUAL(3, add(1,2));
-}
-void test_bitwise(void){    
+    calc1 test_c1={10.0,5.0}; //positive
+    calc1 testc12={-10.0,-5.0}; //negative
+    calc1 testc1={10.0,0.0}; //zero deno
+    calc2 testc2={6,5}; // positive
+    calc2 testc22={-6,-5}; // negative
+    calc5  testc5={8}; //Positive
+    calc5 testc51={-8}; //negative
+    calc5  testc52={0}; //Zero
+
+    void t_add(void);
+    void t_sub(void);
+    void t_mul(void);
+    void t_div(void);
+    void t_divByZero(void);
+    void t_logneg(void);
+    void t_logzero(void);
+   // void t_Zfact(void);
+    void t_fact(void);
+    void t_pow(void);
+    void t_mod(void);
+    void t_sin(void);
+    void t_cos(void);
+    void t_tan(void);
+    void t_cosec(void);
+    void t_sec(void);
+    void t_cot(void);
+    void test_bitwise(void){    
     TEST_ASSERT_EQUAL(SUCCESS, bitwise_operations());
 }
 
@@ -174,10 +191,6 @@ void test_complex_calc(void){
 }
 void test_temp(void){    
     TEST_ASSERT_EQUAL(SUCCESS, temperature());
-}
-
-void test_1_sub(void){    
-    TEST_ASSERT_EQUAL(3, sub(5,2));
 }
 
 void test_1_temp_con(void){    
@@ -196,14 +209,88 @@ int main(void)
     RUN_TEST(test_sub);
     RUN_TEST(test_mul);
     RUN_TEST(test_div);
-    RUN_TEST(test_basic_calc);
-    RUN_TEST(test_1_add);
-    RUN_TEST(test_1_sub);
     RUN_TEST(test_bitwise);
     RUN_TEST(test_complex_calc);
     RUN_TEST(test_temp);
     RUN_TEST(test_1_temp_con);
-
+    RUN_TEST(t_add);
+    RUN_TEST(t_sub);
+    RUN_TEST(t_mul);
+    RUN_TEST(t_div);
+    RUN_TEST(t_divByZero);
+    RUN_TEST(t_logneg);
+    RUN_TEST(t_logzero);
+    // RUN_TEST(t_Zfact);
+    RUN_TEST(t_fact);
+   // RUN_TEST(t_mod);
+    RUN_TEST(t_sin);
+    RUN_TEST(t_cos);
+    RUN_TEST(t_tan);
+    RUN_TEST(t_cosec);
+    RUN_TEST(t_sec);
+    RUN_TEST(t_cot);
     /* Close the Unity Test Framework */
     return UNITY_END();
+}
+/* all test functions */ 
+void t_add(void) {
+  TEST_ASSERT_EQUAL(15.000000,add(&test_c1));
+  // TEST_ASSERT_EQUAL(-15.00000,sum(&testc12)); 
+   }
+void t_sub(void) {
+  TEST_ASSERT_EQUAL(5.000000,sub(&test_c1));
+  TEST_ASSERT_EQUAL(-5,sub(&testc12)); /* negative number input case  */
+}
+void t_mul(void) {
+  TEST_ASSERT_EQUAL(50.000000,mul(&test_c1));
+  TEST_ASSERT_EQUAL(50.000000,mul(&testc12)); /* negative number input case  */
+}
+void t_div(void){
+    TEST_ASSERT_EQUAL(2.000000,divi(&test_c1));
+}
+void t_divByZero(void){
+    TEST_ASSERT_EQUAL(-1.000000,divi(&testc1));
+}
+void t_logneg(void)
+{
+  TEST_ASSERT_EQUAL(-1, log_10(&testc51));
+}
+void t_logzero(void)
+{
+  TEST_ASSERT_EQUAL(-1, log_10(&testc52));
+}
+// void t_zfact(void){
+//  TEST_ASSERT_EQUAL(1,fact(&testc52));  
+// }
+
+void t_fact(void){
+ TEST_ASSERT_EQUAL(40320,fact(&testc5));  
+}
+// void t_mod(void) {
+//   TEST_ASSERT_EQUAL(1,modu(&testc2));
+//   TEST_ASSERT_EQUAL(1,modu(&testc52)); 
+// }
+void t_sin(void) {
+  TEST_ASSERT_EQUAL(0.14,sin_v(&testc5));
+  TEST_ASSERT_EQUAL(-0.14,sin_v(&testc51)); 
+}
+void t_cos(void) {
+  TEST_ASSERT_EQUAL(0.99,cos_v(&testc5));
+  TEST_ASSERT_EQUAL(0.99,cos_v(&testc51)); 
+}
+void t_tan(void) {
+  TEST_ASSERT_EQUAL(0.14,tan_v(&testc5));
+   TEST_ASSERT_EQUAL(-0.14,tan_v(&testc51)); 
+}
+void t_cosec(void) {
+  TEST_ASSERT_EQUAL(7.19,sin_inv(&testc5));
+   TEST_ASSERT_EQUAL(-7.19,sin_inv(&testc51)); 
+}
+void t_sec(void) {
+  TEST_ASSERT_EQUAL(1.01,cos_inv(&testc5));
+  TEST_ASSERT_EQUAL(1.01,cos_inv(&testc51)); 
+}
+void t_cot(void) {
+  TEST_ASSERT_EQUAL(7.12,tan_inv(&testc5));
+   TEST_ASSERT_EQUAL(-7.12,tan_inv(&testc51)); 
 }
