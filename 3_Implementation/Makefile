@@ -45,6 +45,7 @@ test: $(SRC) $(TEST_SRC)
 	./$(TEST_PROJ_NAME).$(EXEC)
 
 coverage:${PROJECT_NAME}
+	
 	gcov -a main.c
 
 cppcheck:
