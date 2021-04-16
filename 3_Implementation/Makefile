@@ -44,9 +44,7 @@ test: $(SRC) $(TEST_SRC)
 	gcc $(TEST_SRC) $(SRC) $(INC) $(INC_T) -lm -o $(TEST_PROJ_NAME).$(EXEC)
 	./$(TEST_PROJ_NAME).$(EXEC)
 
-coverage: $(PROJ_NAME).$(EXEC)
-	gcc -fprofile-arcs -ftest-coverage main.c $(SRC) $(INC) -lm -o $(PROJ_NAME).$(EXEC)
-	./$(PROJ_NAME).$(EXEC)
+coverage:${PROJECT_NAME}
 	gcov -a main.c
 
 cppcheck:
