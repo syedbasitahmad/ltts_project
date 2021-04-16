@@ -46,7 +46,7 @@ Folder               | Description
 ## Contributors List and Summary
 | SF_ID | Name | Features | Issues Raised | Issues Solved | No. of Test Cases | No. of Test Cases Passing |
 |-----|-----|-----|-----|-----|-----|-----|
-| 260756 | Syed Basit Ahmad | All | 2 | 0 | 24 | 24
+| 260756 | Syed Basit Ahmad | All | 2 | 1 | 24 | 24
 
 ## Challenges Faced and How it was overcome
 | Challenge Faced | Method to overcome |
