@@ -1,4 +1,4 @@
-PROJ_NAME = Complex_Calculator
+PROJ_NAME = one_stop
 TEST_PROJ_NAME = Test_$(PROJ_NAME)
 
 
